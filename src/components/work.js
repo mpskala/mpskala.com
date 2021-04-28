@@ -8,22 +8,26 @@ const Work = () => {
     {
       title: 'COVID-19 Infection Tracker',
       year: '2021',
-      img: 'covid.png'
+      img: 'covid.png',
+      link: 'https://github.com/mpskala/covid-trackr'
     },
     {
       title: 'Video to GIF Converter',
       year: '2021',
-      img: 'gifmakr.png'
+      img: 'gifmakr.png',
+      link: 'https://github.com/mpskala/gifmakr'
     },
     {
       title: 'Title',
       year: '2021',
-      img: 'skyGarden.jpg'
+      img: 'skyGarden.jpg',
+      link: 'https://github.com/mpskala'
     },
     {
       title: 'Title',
       year: '2021',
-      img: 'skyGarden.jpg'
+      img: 'skyGarden.jpg',
+      link: 'https://github.com/mpskala'
     },
   ]
   return (

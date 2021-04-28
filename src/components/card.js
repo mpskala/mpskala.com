@@ -1,12 +1,12 @@
 import React from 'react'
 import {BsArrowDownLeft} from 'react-icons/bs'
 
-const Card = ({index, year, title, source}) => {
+const Card = ({index, year, title, source, link}) => {
   const baseUrl = "./assets/images/"
   const imageSource = baseUrl + source
   return (
     <div className={"w work-" + (index + 1)}>
-      <a href="#">
+      <a href={link}>
         <div className="w-inner">
           <div className="w-text-box">
             <div className="text-1">
