@@ -3,7 +3,7 @@ import {BsArrowDownLeft} from 'react-icons/bs'
 
 const Card = ({index, year, title, source, link}) => {
   const baseUrl = "./assets/images/"
-  const imageSource = baseUrl + source + '?quality=75'
+  const imageSource = baseUrl + source
   return (
     <div className={"w work-" + (index + 1)}>
       <a href={link}>

@@ -20,13 +20,13 @@ const Work = () => {
     {
       title: 'Title',
       year: '2021',
-      img: 'skyGarden.jpg',
+      img: 'sg-min.jpg',
       link: 'https://github.com/mpskala'
     },
     {
       title: 'Title',
       year: '2021',
-      img: 'skyGarden.jpg',
+      img: 'sg-min.jpg',
       link: 'https://github.com/mpskala'
     },
   ]

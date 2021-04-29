@@ -10,7 +10,7 @@ const Header = () => {
         <span>"ordinary" world</span>
       </h1>
       <div className="hero-img">
-        <img src={require("../assets/images/scalaStreet.jpg").default} alt=""/>
+        <img src={require("../assets/images/ss-min.jpg").default} alt=""/>
       </div>
       <div className="arrow">
         <BsArrowDown/>
