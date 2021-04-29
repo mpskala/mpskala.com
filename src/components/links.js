@@ -40,7 +40,7 @@ const Links = () => {
         </a>
       </li>
       <li className="social">
-        <a href="../documents/CV.pdf" className="item">
+        <a href="/documents/CV.pdf" className="item" target="black" rel="norefferer">
           CV
           <span className="gray">
             <p>View</p>
