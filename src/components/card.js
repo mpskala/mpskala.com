@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'react-optimized-image'
 import {BsArrowDownLeft} from 'react-icons/bs'
 
 const Card = ({index, year, title, source, link}) => {
@@ -26,7 +25,7 @@ const Card = ({index, year, title, source, link}) => {
             </div>
           </div>
           <div className="img-container">
-            <Img src={imageSource} alt=""/>
+            <img src={imageSource} alt=""/>
             <div className="view">view</div>
           </div>
         </div>
