@@ -38,17 +38,20 @@ const ListStyle = styled.ul`
       }
     }
   }
-  /* .social:hover {
-    .item {
-      padding: .75vw 1vw;
-      
-      span {
-        svg {
-          transform: rotate(45deg);
+
+  @media (min-width: 1200px) {
+    .social:hover {
+      .item {
+        padding: .75vw 1vw;
+        
+        span {
+          svg {
+            transform: rotate(45deg);
+          }
         }
       }
     }
-  } */
+  }
 `
 
 const Links = () => {

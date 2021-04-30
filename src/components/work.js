@@ -35,31 +35,35 @@ const Work = () => {
       year: '2021',
       img: 'covid.png',
       link: 'https://github.com/mpskala/covid-trackr',
+      external: true
     },
     {
       title: 'Video to GIF Converter',
       year: '2021',
       img: 'gifmakr.png',
       link: 'https://github.com/mpskala/gifmakr',
+      external: true
     },
     {
       title: 'Title',
       year: '2021',
       img: 'sg-min.jpg',
       link: 'https://github.com/mpskala',
+      external: true
     },
     {
       title: 'Title',
       year: '2021',
       img: 'sg-min.jpg',
       link: 'https://github.com/mpskala',
+      external: true
     },
   ]
   return (
     <Works>
       {
         cardInfo.map((info, index) => {
-          return <Card index={index} title={info.title} link={info.link} year={info.year} source={info.img}/>
+          return <Card index={index} external={info.external} title={info.title} link={info.link} year={info.year} source={info.img}/>
         })
       }
     </Works>

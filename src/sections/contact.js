@@ -188,7 +188,7 @@ const ContactSection = styled.section`
     }
   }
   @media (min-width: 1800px) { 
-    padding-bottom: 15vh;
+    padding-bottom: 7.5vh;
     .contacts {
       .contacts-row-1 {
         h3, h1 {

@@ -52,15 +52,24 @@ const C = styled.div`
     .img-container {
       position: relative;
       overflow: hidden;
+      transition: .5s;
       
       img {
         width: 100%;
         max-height: 200px;
         object-fit: cover;
         filter: grayscale(100%);
+        transition: .5s;
       }
       
       .view {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .75s;
+        text-align: center;
         display: none;
       }
     }
@@ -94,6 +103,22 @@ const C = styled.div`
         img {
           max-height: 350px;
         }
+
+        &:hover {
+          transform: scale(.95);
+
+          img {
+            opacity: .4;
+            transform: scale(1.2);
+          }
+
+          .view {
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -109,7 +134,7 @@ const C = styled.div`
   }
 `
     
-const Card = ({index, year, title, source, link}) => {
+const Card = ({index, year, title, source, link, external}) => {
   const baseUrl = "./assets/images/"
   const imageSource = baseUrl + source
   return (
@@ -134,7 +159,10 @@ const Card = ({index, year, title, source, link}) => {
           </div>
           <div className="img-container">
             <img src={imageSource} alt=""/>
-            <div className="view">view</div>
+            <div className="view">
+              view
+              {external ? <span className="external">(external)</span> : ''}
+            </div>
           </div>
         </div>
       </a>
