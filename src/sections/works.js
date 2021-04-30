@@ -1,10 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Work from '../components/work'
 
+const WorkSection = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  .incipit-works {
+    max-width: 80%;
+    margin: 0 0 15vw auto;
+  }
+`
+
 const Works = () => {
   return (
-    <section className="projects">
+    <WorkSection>
       <div className="incipit-works">
         <p className="pushed">
         Sites reflect the personality of a company and must convey 
@@ -17,7 +28,7 @@ const Works = () => {
         </p>
       </div>
       <Work/>
-    </section>
+    </WorkSection>
   )
 }
 

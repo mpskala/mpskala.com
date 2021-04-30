@@ -12,11 +12,11 @@ import ProgressBar from './components/progressBar'
 function App() {
   return (
     <div className="App">
-      <Cursor/>
+      {/* <Cursor/> */}
       <Nav/>
       <ProgressBar/>
       <Home/>
-      <Footer/>  
+      <Footer/>
     </div>
   );
 }
