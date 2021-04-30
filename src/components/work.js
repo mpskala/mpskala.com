@@ -5,7 +5,7 @@ import Card from './card'
 
 const Works = styled.div`
   display: grid;
-  width: 85vw;
+  width: 80vw;
   margin: 0 auto;
   gap: 2.5vh;
   z-index: 2;

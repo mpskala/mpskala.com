@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import {BsArrowDownRight} from 'react-icons/bs'
 
 import Links from '../components/links'
 
 const ContactSection = styled.section`
   padding-bottom: calc(64px * 3);
+  margin-top: 15vh;
 
+  .title {
+    margin-bottom: 7.5vh;
+  }
   .contacts {
     .contacts-row-1 {
       display: flex;
@@ -18,7 +23,7 @@ const ContactSection = styled.section`
       }
 
       h3 {
-        margin-bottom: calc(64px / 2);
+        margin: 0;
       }
 
       h1 {
@@ -72,14 +77,12 @@ const ContactSection = styled.section`
   }
 
   @media (min-width: 767px) {
+    padding-bottom: 20vh;
+
     .contacts {
       .contacts-row-1 {
         h3, h1 {
           font-size: 3.225rem;
-        }
-
-        h3 {
-          margin: 0;
         }
 
         h1 {
@@ -125,11 +128,88 @@ const ContactSection = styled.section`
       }
     }
   }
+  
+  @media (min-width: 1023px) {
+    .contacts {
+      .contacts-row-1 {
+        flex-direction: row;
+
+        h1 {
+          margin-left: auto;
+        }
+      }
+
+      .contacts-row-2 {
+        grid-template-columns: 25vw 1fr 21.25vw;
+        justify-content: center;
+        align-items: end;
+
+        .col-1 {
+          align-self: start;
+          order: 1;
+          margin-top: 0;
+          padding-bottom: 5vh;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .col-2 {
+          .img-cont {
+            max-width: 22.75vw;
+            margin: 0 auto;
+          }
+        }
+
+        .col-3 {
+          grid-column-start: auto;
+          grid-column-end: auto;
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) { 
+    .contacts {
+      .contacts-row-1 {
+        h3, h1 {
+          font-size: 4rem;
+        }
+      }
+
+      .contacts-row-2 {
+        grid-template-columns: 20vw 1fr 20vw;
+      }
+    }
+  }
+  @media (min-width: 1800px) { 
+    padding-bottom: 15vh;
+    .contacts {
+      .contacts-row-1 {
+        h3, h1 {
+          font-size: 5rem;
+        }
+      }
+
+      .contacts-row-2 {
+        margin-top: -7.5vh;
+      }
+    }
+  }
 `
 
 const Contact = () => {
   return (
     <ContactSection>
+      <div id="contact" className="title">
+        <p>contact me</p>
+        <BsArrowDownRight size={12}/>
+      </div>
       <div className="contacts">
         <div className="contacts-row-1">
           <h3>Hi!</h3>

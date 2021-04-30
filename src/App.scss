@@ -106,13 +106,13 @@ $half: -$height / 2;
 nav, footer {
   background: $bg;
   z-index: 10;
+  padding: 2.5vw;
 }
 
 .title {
   display: flex;
   align-items: center;
   gap: 1.5vw;
-  margin: 25vh 0 10vh;
 }
 
 @media (min-width: 767px) {
@@ -130,19 +130,31 @@ nav, footer {
   }
   
   .title {
-    margin: 15vh 0 7.5vh;
     gap: .5vw;
 
     svg {
       transform: scale(1.2);
     }
-
-    &:first-of-type {
-      margin: 0 0 10vh;
-    }
   }
 }
 
+@media (min-width: 1023px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav, footer {
+    padding: 2vw 2.5vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  nav, footer {
+    padding: 1vw 2vw;
+  }
+}
 // .projects {
 //   flex-direction: column;
 // }

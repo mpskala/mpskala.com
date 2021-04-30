@@ -4,21 +4,21 @@ import styled from 'styled-components'
 
 const C = styled.div`
   width: 100%;
-
+  
   .w-inner {
     .w-text-box {
       display: grid;
       grid-template-columns: 45px 1fr auto;
       margin-bottom: 2vw;
-
+      
       .text-1, .text-2, .text-3 {
         display: flex;
       }
-
+      
       .text-1 {
         flex-direction: column;
         justify-content: space-between;
-
+        
         .num {
           display: inline-flex;
           border-radius: 100%;
@@ -30,6 +30,7 @@ const C = styled.div`
         }
         .year {
           margin: 0;
+          color: gray;
         }
       }
       .text-2 {
@@ -51,21 +52,63 @@ const C = styled.div`
     .img-container {
       position: relative;
       overflow: hidden;
-
+      
       img {
         width: 100%;
         max-height: 200px;
         object-fit: cover;
         filter: grayscale(100%);
       }
-
+      
       .view {
         display: none;
       }
     }
   }
-`
+  
+  @media (min-width: 1200px) {
+    .w-inner {
+      .w-text-box {
+        grid-template-columns: 3.75vw 1fr auto;
+        
+        .text-1 {
+          .year {
+            margin-top: auto;
+            margin-bottom: .1vw;
+          }
+        }
+        
+        .text-2 {
+          h2 {
+            max-width: 40ch;
+            word-wrap: break-word;
+            
+            span {
+              font-size: 3rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .img-container {
+        img {
+          max-height: 350px;
+        }
+      }
+    }
+  }
 
+  @media (min-width: 1800px) {
+    .w-inner {
+      .img-container {
+        img {
+          max-height: 25vw;
+        }
+      }
+    }
+  }
+`
+    
 const Card = ({index, year, title, source, link}) => {
   const baseUrl = "./assets/images/"
   const imageSource = baseUrl + source

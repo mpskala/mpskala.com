@@ -8,7 +8,6 @@ const Navigation = styled.nav`
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 5vw;
 
   .menu {
     display: flex;
@@ -23,9 +22,6 @@ const Navigation = styled.nav`
       background-color: #fff;
     }
   }
-  @media (min-width: 767px) {
-    padding: 2.5vw 5vw;    
-  }
 `
 
 const Nav = () => {
@@ -36,11 +32,11 @@ const Nav = () => {
         {/* <a href="/">mpskala</a> */}
       </div>
       <div className="menu">
-        <Link to="works" offset={-100} spy={true} smooth={true} className="works">
+        <Link to="works" offset={-60} spy={true} smooth={true} className="works">
           <p>works</p>
         </Link>
         <span/>
-        <Link to="contact" offset={-100} spy={true} smooth={true} className="contact">
+        <Link to="contact" offset={-60} spy={true} smooth={true} className="contact">
           <p>contact</p>
         </Link>
       </div>

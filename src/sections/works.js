@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {BsArrowDownRight} from 'react-icons/bs'
 
 import Work from '../components/work'
 
@@ -9,13 +10,32 @@ const WorkSection = styled.section`
 
   .incipit-works {
     max-width: 80%;
-    margin: 0 0 15vw auto;
+    margin: 15vw 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: 767px) {
+    .incipit-works {
+      margin: 10vw 0;
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: 1023px) {
+    .incipit-works {
+      max-width: 33.75vw;
+      margin: 3vw 0 4vw auto;
+    }
   }
 `
 
 const Works = () => {
   return (
     <WorkSection>
+      <div id="works" className="title">
+        <p>selected works</p>
+        <BsArrowDownRight size={12}/>
+      </div>
       <div className="incipit-works">
         <p className="pushed">
         Sites reflect the personality of a company and must convey 

@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 const Head = styled.section`
   display: flex;
-  padding-top: 25vh;
+  /* padding-top: 25vh; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: start;
+  height: 100vh;
 
   .intro {
     width: 100%;
@@ -17,7 +18,7 @@ const Head = styled.section`
     h1 {
       display: flex;
       flex-direction: column;
-      font-size: 12.5vw;
+      font-size: 3rem;
       font-weight: 600;
 
       .middle {
@@ -72,11 +73,58 @@ const Head = styled.section`
     height: 100vh;
     padding: 0;
     
+    .intro h1 {
+      font-size: 7rem;
+    }
+
     .intro h1 .middle .intro-text-big {
       display: block;
     }
     .intro-text {
       display: none;
+    }
+  }
+
+  @media (min-width: 1023px) {
+    .intro h1 {
+      font-size: 10rem;
+    }
+    
+    .arrow {
+      position: static;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .intro h1 .last {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
+
+    .hero-img {
+      width: 80vw;
+      height: 80vh;
+    }
+
+    .arrow {
+      margin-top: 5vh;
+      svg {
+        transform: scale(5)
+      }
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .intro h1 .middle .intro-text-big {
+      display: block;
+      margin-right: 7.5vw;
+    }
+    
+    .hero-img {
+      img {
+        object-position: 0% 30%;
+      }
     }
   }
 `

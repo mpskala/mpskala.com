@@ -10,7 +10,6 @@ const NavFooter = styled.footer`
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5vw 5vw;
 
   .to-top {
     display: flex;
