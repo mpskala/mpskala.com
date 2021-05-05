@@ -22,12 +22,12 @@ function useEventListener(eventName, handler, element = document) {
 }
 
 function Cursor ({
-  color = '255, 255, 255',
+  color = '235, 65, 65',
   outerAlpha = 0.4,
   innerSize = 10,
   outerSize = 10,
-  outerScale = 5,
-  innerScale = 0.7
+  outerScale = 7.5,
+  innerScale = 0.8
 }) {
   const cursorOuterRef = React.useRef()
   const cursorInnerRef = React.useRef()
