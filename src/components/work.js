@@ -44,20 +44,20 @@ const Work = () => {
       link: 'https://github.com/mpskala/gifmakr',
       external: true
     },
-    {
-      title: 'Title',
-      year: '2021',
-      img: 'sg-min.jpg',
-      link: 'https://github.com/mpskala',
-      external: true
-    },
-    {
-      title: 'Title',
-      year: '2021',
-      img: 'sg-min.jpg',
-      link: 'https://github.com/mpskala',
-      external: true
-    },
+    // {
+    //   title: 'Title',
+    //   year: '2021',
+    //   img: 'sg-min.jpg',
+    //   link: 'https://github.com/mpskala',
+    //   external: true
+    // },
+    // {
+    //   title: 'Title',
+    //   year: '2021',
+    //   img: 'sg-min.jpg',
+    //   link: 'https://github.com/mpskala',
+    //   external: true
+    // },
   ]
   return (
     <Works>
