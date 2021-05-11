@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import './App.scss'
 
@@ -9,12 +9,41 @@ import Home from './home'
 import Cursor from './components/cursor'
 import ProgressBar from './components/progressBar'
 
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
+
+  return windowSize;
+}
+
 function App() {
+  const size = useWindowSize();
   return (
     <div className="App">
-      <Cursor/>
+
+      {console.log(size.width)}
+      {size.width > 1025 ? (
+        <>
+          <Cursor/>
+          <ProgressBar/>
+        </>  
+      ) : ''}
       <Nav/>
-      <ProgressBar/>
       <Home/>
       <Footer/>
     </div>

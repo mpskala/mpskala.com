@@ -72,9 +72,9 @@ const Links = () => {
 
   return (
     <ListStyle>
-      {extLinks.map((link) => {
+      {extLinks.map((link, index) => {
         return (
-          <li className="social">
+          <li key={index} className="social">
             <a href={link.link} className="item" target="blank">
               {link.name}
               <span className="gray">

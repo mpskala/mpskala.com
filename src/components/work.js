@@ -63,7 +63,7 @@ const Work = () => {
     <Works>
       {
         cardInfo.map((info, index) => {
-          return <Card index={index} external={info.external} title={info.title} link={info.link} year={info.year} source={info.img}/>
+          return <Card key={index} index={index} external={info.external} title={info.title} link={info.link} year={info.year} source={info.img}/>
         })
       }
     </Works>
