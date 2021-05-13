@@ -13,7 +13,7 @@ const Navigation = styled.nav`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.5vw;
+    gap: 10px;
 
     span {
       width: 4px;

@@ -5,12 +5,13 @@ import {BsArrowDownRight} from 'react-icons/bs'
 import Links from '../components/links'
 
 const ContactSection = styled.section`
-  padding-bottom: calc(64px * 3);
+  padding-bottom: calc(64px * 1.5);
   margin-top: 15vh;
 
   .title {
     margin-bottom: 7.5vh;
   }
+  
   .contacts {
     .contacts-row-1 {
       display: flex;
