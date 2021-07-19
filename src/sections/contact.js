@@ -216,7 +216,7 @@ const Contact = () => {
           <h3>Hi!</h3>
           <h1>
             <span>I'm Matthew Skala,</span>
-            <span>a Computer Science Student</span>
+            <span>a Computer Science Graduate</span>
             <span className="end">based in England</span>
           </h1>
         </div>

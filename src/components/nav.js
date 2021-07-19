@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-scroll'
 import styled from 'styled-components'
 
+import {ReactComponent as Logo} from '../assets/images/logo-circle.svg'
+
 const Navigation = styled.nav`
   position: fixed;
   display: flex;
@@ -24,12 +26,15 @@ const Navigation = styled.nav`
   }
 `
 
+const colour = "white"
+
 const Nav = () => {
   return (
     <Navigation>
       <div className="logo">
-        <Link to="home" spy={true} smooth={true}>mpskala</Link>
-        {/* <a href="/">mpskala</a> */}
+        <Link to="home" spy={true} smooth={true}>
+          <Logo fill={colour} stroke={colour} width="75px" height="100%" />
+        </Link>
       </div>
       <div className="menu">
         <Link to="works" offset={-60} spy={true} smooth={true} className="works">
